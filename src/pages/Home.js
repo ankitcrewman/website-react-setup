@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.2)", 
       background: "white", 
       color: "black",
-      "& $typography": { // Apply hover effect to nested Typography components
+      "& $typography": { 
         color: "black",
       },
     },
