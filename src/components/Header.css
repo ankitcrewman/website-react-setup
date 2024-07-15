@@ -1,0 +1,10 @@
+/* Header.css */
+
+.second-header .MuiButton-root {
+    color: black; /* Change link color to black */
+  }
+  
+  .second-header .MuiTypography-root img {
+    height: 40px; /* Adjust the height of the logo */
+  }
+  
