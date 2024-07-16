@@ -46,7 +46,7 @@ const Home = () => {
 
   return (
     <>
-      <Hero /> {/* Add the Hero component here */}
+      <Hero /> 
       <Container className={classes.container}>
         <Grid className={classes.sectionSet} container>
           <Grid className={classes.sectionSetInside} item xs={12} sm={6} md={4}>
@@ -95,6 +95,5 @@ const Home = () => {
     </>
   );
 };
-
 
 export default Home;
