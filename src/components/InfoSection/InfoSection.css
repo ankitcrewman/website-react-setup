@@ -1,0 +1,28 @@
+/* src/components/InfoSection.css */
+
+.info-section-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #0000000d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 6px 10px gainsboro;
+}
+  
+  .info-section-heading {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .info-section-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+ 
+  }
+  
+  .info-section-info {
+    margin-top: 10px;
+  }
+  
+  

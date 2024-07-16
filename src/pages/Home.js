@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, Typography, Paper, Box } from "@mui/material";
 import { makeStyles, withStyles } from "@mui/styles";
 import Hero from "../components/Home/Hero"; // Import the Hero component
+import InfoSection from "../components/InfoSection/InfoSection";
 
 // Define custom styles
 const useStyles = makeStyles((theme) => ({
@@ -16,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     height: "300px",
     background: "linear-gradient(to top right, #113155, #000000)",
     margin: "3px",
-    transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out", 
+    transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.7s ease-in-out, color 0.3s ease-in-out", 
     "&:hover": {
       transform: "scale(1.05)", 
       boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.2)", 
@@ -49,7 +50,7 @@ const Home = () => {
       <Container className={classes.container}>
         <Grid className={classes.sectionSet} container>
           <Grid className={classes.sectionSetInside} item xs={12} sm={6} md={4}>
-            <Paper className={classes.paper}>
+            <Paper elevation={0} className={classes.paper}>
               <Box p={2}>
                 <Typography variant="h6" className={classes.typography}>
                   Section 1
@@ -61,7 +62,7 @@ const Home = () => {
             </Paper>
           </Grid>
           <Grid className={classes.sectionSetInside} item xs={12} sm={6} md={4}>
-            <Paper className={classes.paper}>
+            <Paper elevation={0} className={classes.paper}>
               <Box p={2}>
                 <Typography variant="h6" className={classes.typography}>
                   Section 2
@@ -73,7 +74,7 @@ const Home = () => {
             </Paper>
           </Grid>
           <Grid className={classes.sectionSetInside} item xs={12} sm={6} md={4}>
-            <Paper className={classes.paper}>
+            <Paper elevation={0} className={classes.paper}>
               <Box p={2}>
                 <Typography variant="h6" className={classes.typography}>
                   Section 3
@@ -85,9 +86,15 @@ const Home = () => {
             </Paper>
           </Grid>
         </Grid>
+        <InfoSection
+          heading="Master Heading"
+          imageSrc="https://via.placeholder.com/400"
+          info="This is the information section where you can add any text or content you like."
+        />
       </Container>
     </>
   );
 };
+
 
 export default Home;
