@@ -16,7 +16,7 @@
   }
   
   .info-section-image {
-    width: 400px;
+    width: 500px;
     height: auto;
     border-radius: 10px;
   }
@@ -25,3 +25,60 @@
     margin-top: 10px;
   }
   
+  /* BubbleEffect.css */
+.bubble-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in;
+}
+
+.bubble:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 20%;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 40%;
+  animation-duration: 6s;
+}
+
+.bubble:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 60%;
+  animation-duration: 12s;
+}
+
+.bubble:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  left: 80%;
+  animation-duration: 7s;
+}
+
+@keyframes rise {
+  0% {
+    bottom: -50px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}

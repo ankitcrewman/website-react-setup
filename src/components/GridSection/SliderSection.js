@@ -41,7 +41,7 @@ const SliderSection = ({ sections }) => {
     slidesToShow: 3,
     slidesToScroll: 2,
     autoplay: true,  // Enable autoplay
-    autoplaySpeed: 3000, // Set autoplay speed in milliseconds
+    autoplaySpeed: 2000, // Set autoplay speed in milliseconds
     responsive: [
       {
         breakpoint: 1024,
