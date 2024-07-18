@@ -1,11 +1,11 @@
-// src/components/InfoSection.js
+// src/components/InfoSectionInverse.js
 
 import React from 'react';
 import { Container, Grid, Typography, Box } from '@mui/material';
 import PropTypes from 'prop-types';
-import './InfoSection.css'; // Import the CSS file
 
-const InfoSection = ({ heading, imageSrc, info }) => {
+
+const InfoSectionInverse = ({ heading, imageSrc, info }) => {
   return (
     <Container className="info-section-container">
       <Typography
@@ -16,15 +16,7 @@ const InfoSection = ({ heading, imageSrc, info }) => {
       >
         {heading}
       </Typography>
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={6} className="info-section-image-container">
-          <Box
-            component="img"
-            src={imageSrc}
-            alt="Image"
-            className="info-section-image"
-          />
-        </Grid>
+      <Grid container spacing={2}>       
         <Grid item xs={12} md={6}>
           <Typography
             variant="body1"
@@ -35,15 +27,23 @@ const InfoSection = ({ heading, imageSrc, info }) => {
             {info}
           </Typography>
         </Grid>
+        <Grid item xs={12} md={6} className="info-section-image-container">
+          <Box
+            component="img"
+            src={imageSrc}
+            alt="Image"
+            className="info-section-image"
+          />
+        </Grid>
       </Grid>
     </Container>
   );
 };
 
-InfoSection.propTypes = {
+InfoSectionInverse.propTypes = {
   heading: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
 };
 
-export default InfoSection;
+export default InfoSectionInverse;

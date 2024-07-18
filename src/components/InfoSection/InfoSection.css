@@ -1,13 +1,14 @@
 /* src/components/InfoSection.css */
 
 .info-section-container {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
   }
   
   .info-section-heading {
-    margin-bottom: 20px;
-    text-align: center; /* Center the heading */
+    margin-bottom: 41px !important;
+    text-align: center;
+
   }
   
   .info-section-image-container {
@@ -17,15 +18,16 @@
   
   .info-section-image {
     width: 500px;
-    height: auto;
+    height: 300px;
     border-radius: 10px;
   }
   
   .info-section-info {
     margin-top: 10px;
+    text-align: justify;
   }
   
-  /* BubbleEffect.css */
+  
 .bubble-background {
   position: relative;
   overflow: hidden;
