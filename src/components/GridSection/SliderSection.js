@@ -18,10 +18,10 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       transform: "scale(1.05)",
       boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.2)",
-      background: "white",
+      background: "linear-gradient(to top right, #000811, #031c90)",
       color: "black",
       "& $typography": {
-        color: "black",
+        color: "white",
       },
     },
   },

@@ -26,17 +26,18 @@
 
 // src/App.js
 // src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ThemeProvider, createTheme } from '@mui/material/styles'; // Import ThemeProvider and createTheme
-import Header from './components/Header';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import Login from './pages/Login';
-import Profile from './pages/Profile';
-import Settings from './pages/Settings';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ThemeProvider, createTheme } from "@mui/material/styles"; // Import ThemeProvider and createTheme
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+import Settings from "./pages/Settings";
+import Footer from "./components/Footer";
 
 // Create a theme instance.
 const theme = createTheme();
@@ -55,6 +56,7 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
+        <Footer />
       </Router>
     </ThemeProvider>
   );
