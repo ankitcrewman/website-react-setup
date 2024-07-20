@@ -96,7 +96,7 @@ const Header = () => {
             </IconButton>
           )}
           <Typography variant="h6" style={{ flexGrow: 1 }}>
-            <img src='/logo.gif' alt="Logo" />
+            <img src={logo} alt="Logo" />
           </Typography>
           {!isMobile && (
             <>
