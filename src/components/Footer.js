@@ -4,7 +4,7 @@ import { Facebook, Twitter, Instagram, LinkedIn } from '@mui/icons-material';
 
 const Footer = () => {
   return (
-    <Box component="footer" sx={{ backgroundColor: '#f8f8f8' , padding: '20px 0' }}>
+    <Box component="footer" sx={{ backgroundColor: '#f8f8f8' , padding: '20px 0 0 0' }}>
       <Container maxWidth="lg">
         <Grid container spacing={4} justifyContent="center">
           {/* Section 1: Logo and Short Description */}
@@ -50,9 +50,10 @@ const Footer = () => {
 
       </Container>
       <Grid sx={{
-        backgroundColor : "black"
+        backgroundColor : "black",
+       marginTop: "20px",
       }}
-      > <Typography variant="h6" align="center" color={ "white"}>Follow Us</Typography>
+      > <Typography variant="h6"  align="center" color={ "white"}>Follow Us</Typography>
 
       </Grid>
     </Box>

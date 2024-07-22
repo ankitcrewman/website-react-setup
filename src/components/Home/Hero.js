@@ -1,6 +1,8 @@
 import React from 'react';
-import { Box, Typography, useMediaQuery } from '@mui/material';
+import { Box, Typography, useMediaQuery, CircularProgress } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import { useQuery } from 'react-query';
+import axios from 'axios';
 import bgImage from '../../assets/images/bg.jpg';
 
 // Define custom styles
@@ -44,18 +46,28 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const fetchImageText = async () => {
+  const { data } = await axios.get('http://localhost/node-js-project/react-back-end/api/image-texts');
+  return data;
+};
+
 const Hero = () => {
   const classes = useStyles();
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+
+  const { data, error, isLoading } = useQuery('imageText', fetchImageText);
+
+  if (isLoading) return <CircularProgress />;
+  if (error) return <div>Error loading data</div>;
 
   return (
     <Box className={classes.heroSection}>
       <Box className={classes.heroText}>
         <Typography variant="h2" className={classes.heroTitle}>
-          Welcome to Our Website
+          {data.heading}
         </Typography>
         <Typography variant="h6" className={classes.heroSubtitle}>
-          Discover our services and offerings
+          {data.sub_head}
         </Typography>
       </Box>
     </Box>
