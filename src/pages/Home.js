@@ -6,6 +6,7 @@ import InfoSection from "../components/InfoSection/InfoSection";
 import SliderSection from "../components/GridSection/SliderSection";
 import InfoSectionInverse from "../components/InfoSectionInverse/InfoSectionInverse";
 import CounterSection from "../components/CounterSection/CounterSection";
+import "../assets/css/Home.css";
 
 // Define custom styles
 // Define custom styles
@@ -13,10 +14,27 @@ const useStyles = makeStyles((theme) => ({
   container: {
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
+    backgroundColor: "",
+    borderRadius: "10px",
+    boxShadow: "1px 3px 69px #dfd9d9",
+    marginTop: "10px",
+    marginBottom: "10px",
+    animation: "$floating 3s ease-in-out infinite",
   },
   sectionSet: {
     paddingTop: "10px",
     paddingBottom: "10px",
+  },
+  "@keyframes floating": {
+    "0%": {
+      transform: "translateY(0)",
+    },
+    "50%": {
+      transform: "translateY(-10px)", // Adjust the distance of floating
+    },
+    "100%": {
+      transform: "translateY(0)",
+    },
   },
 }));
 
