@@ -68,7 +68,7 @@ const SliderSection = ({ sections }) => {
             <Typography variant="h6" className={classes.typography}>
               {section.title}
             </Typography>
-            <Typography className={classes.typography}>
+            <Typography textAlign={"justify"} className={classes.typography}>
               {section.content}
             </Typography>
           </Paper>
