@@ -29,6 +29,10 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     transition: "color 0.3s ease-in-out",
   },
+  content: {
+    textAlign: "justify",
+    color: "white",
+  },
 }));
 
 const SliderSection = ({ sections }) => {
@@ -68,9 +72,10 @@ const SliderSection = ({ sections }) => {
             <Typography variant="h6" className={classes.typography}>
               {section.title}
             </Typography>
-            <Typography textAlign={"justify"} className={classes.typography}>
-              {section.content}
-            </Typography>
+            <div
+              className={classes.content}
+              dangerouslySetInnerHTML={{ __html: section.content }}
+            />
           </Paper>
         </Box>
       ))}

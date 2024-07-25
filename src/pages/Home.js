@@ -63,6 +63,7 @@ const Home = () => {
         <div className={classes.sectionSet}>
           <SliderSection sections={sections} />
         </div>
+       
         <InfoSection
           heading="Master Heading"
           imageSrc="https://img.freepik.com/free-photo/cyberpunk-city-street-night-with-neon-lights-futuristic-aesthetic_23-2151488734.jpg?t=st=1721284309~exp=1721287909~hmac=155e02ea1213619cf35cf123f9ec4701aea8e5d86064e188cc182d58f80ac66e&w=996"
