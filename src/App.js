@@ -38,6 +38,7 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import Footer from "./components/Footer";
+import Registration from './pages/Registration';
 
 // Create a theme instance.
 const theme = createTheme();
@@ -55,6 +56,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/register" element={<Registration />} />
         </Routes>
         <Footer />
       </Router>
